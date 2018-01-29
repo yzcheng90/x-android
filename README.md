@@ -5,6 +5,13 @@
 
 <br>
 
+![image](https://github.com/yzcheng90/x-android/blob/master/pic/img1.png)
+
+>项目示例图
+[![Watch the video](https://github.com/yzcheng90/x-android/blob/master/pic/img2.png)](https://github.com/yzcheng90/x-android/blob/master/pic/demo_video.mp4)
+
+
+
 
 - 本人QQ：913624256
 如果喜欢，记得star fork 谢谢您的关注 x_android会持续维护
