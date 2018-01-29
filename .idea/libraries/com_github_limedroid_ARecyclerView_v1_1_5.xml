@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.limedroid:ARecyclerView-v1.1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ARecyclerView-v1.1.5.aar/da877d4950787d8874d474772f8630a6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ARecyclerView-v1.1.5.aar/da877d4950787d8874d474772f8630a6/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.limedroid/ARecyclerView/v1.1.5/b9ba52bb060a790a262deaf4e6843b6b2abd9009/ARecyclerView-v1.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

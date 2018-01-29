@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId 'com.suke.czx.demo'
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile rootProject.ext.dependencies["avi-loading"]
+    compile 'com.blankj:utilcode:1.11.1'
+    compile 'com.tapadoo.android:alerter:2.0.2'
+    compile 'com.yanzhenjie:permission:1.1.2'
+    compile project(":mvp")
+}
