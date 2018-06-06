@@ -4,6 +4,12 @@
     <color name="colorPrimaryDark">#098049</color>
     <color name="colorAccent">#ffffff</color>
 
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDisabled">#c2c1c1</color>
+    <color name="color1">#e9e9e9</color>
+    <color name="black">#000000</color>
+    <color name="color4">#666666</color>
+
     <color name="text_primary">#000000</color>
     <color name="text_secondary">#87000000</color>
     <color name="text_disabled">#38000000</color>

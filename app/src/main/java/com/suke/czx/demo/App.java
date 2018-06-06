@@ -1,9 +1,14 @@
 package com.suke.czx.demo;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import com.blankj.utilcode.util.Utils;
 import com.suke.czx.demo.interceptor.DataInterceptor;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import cn.droidlover.xdroidmvp.net.NetError;
 import cn.droidlover.xdroidmvp.net.NetProvider;
 import cn.droidlover.xdroidmvp.net.RequestHandler;
@@ -19,6 +24,7 @@ import okhttp3.OkHttpClient;
 public class App extends Application {
 
     private static Context context;
+    private static List<Activity> activityList = new ArrayList<>();
 
     @Override
     public void onCreate() {
@@ -78,5 +84,27 @@ public class App extends Application {
 
     public static Context getContext() {
         return context;
+    }
+
+    public static void addActivity(Activity activity){
+        activityList.add(activity);
+    }
+
+    public static void removeActivity(Activity activity){
+        activityList.remove(activity);
+    }
+
+    public static void closeAllActivity(){
+        for (Activity activity : activityList){
+            if(activity != null){
+                activity.finish();
+            }
+        }
+        activityList.clear();
+        AppSetting.Initial(context).removePreferences(AppConstant.USER_INFO);
+    }
+
+    public static List<Activity> getActivityList(){
+        return activityList;
     }
 }
